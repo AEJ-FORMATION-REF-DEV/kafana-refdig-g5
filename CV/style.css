@@ -1,4 +1,8 @@
 /* CSS general*/
+body{
+    width: 1050px;
+    margin-left: 10%;
+}
 h1{
     font-size: 30px;
 }
@@ -12,11 +16,11 @@ ul, ol{
     list-style: none;
 
 }
-.wrapper{
+/* .wrapper{
     width: 900px;
     margin: 0 auto;
     Padding: 0 10px;
-}
+} */
 .contenu{
     line-height: 40px;
     font-size: 20px;
@@ -46,6 +50,8 @@ ul, ol{
     padding: 30px;
     border: 2px #000 solid;
     background-color: rgb(2, 2, 85);
+    width: 1000px;
+    
 }
 #presentation img{
     float: right;
@@ -120,4 +126,51 @@ ul, ol{
 }
 .progression_recul {
     margin-left: 90px;
+}
+
+/* Responsive */
+
+@media (max-width: 1300px) {
+    body{
+        width: 1050px;
+        margin-left: 0;
+    
+    }
+    
+}
+@media (max-width: 1110px) {
+    body{
+        background-color: blue;
+        width: 1000px;
+        margin-left: 0;
+    
+    }
+    #presentation{
+        width: 800px;
+        
+    }
+    .element_divers {
+        font-size: 20px ;
+        float: left;
+        margin-left: 50px;
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+    h1{
+        font-size: 20px;
+
+    }
+    .entete{    
+        width: 200px;
+        font-size: 20px;
+    }
+    #diplome h2, #formation h2,#divers h2 {    
+        width: 800px;
+        margin-left: 20px;
+    }
+    #presentation img{
+        float: right;
+        padding-bottom: 50px;
+        margin-right: 110px;
+    }
 }
